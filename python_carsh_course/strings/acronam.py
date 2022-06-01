@@ -1,0 +1,13 @@
+#Fill in the gaps in the initials function so that it returns the initials of the words contained in the phrase received, in upper case. For example: "Universal Serial Bus" should return "USB"; "local area network" should return "LAN”.
+
+def initials(phrase):
+    words = phrase.upper()
+    result = ""
+    #new_list = words.split()
+    for word in words.split():
+        result += word[0]
+    return result
+
+print(initials("Universal Serial Bus")) # Should be: USB
+print(initials("local area network")) # Should be: LAN
+print(initials("Operating system")) # Should be: OS
